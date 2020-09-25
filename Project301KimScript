@@ -1,7 +1,0 @@
-# Script Name:           Project 301 Script
-# Author:                Kimberly Dills
-# Date of last revision: 9/23/2020
-# Description of purpose:Powershell Active Directory Automation
-
-New-ADUser -SamAccountName "lright" -Name "Letitia Right" -GivenName "Letitia" -Surname "Right" -Company "Fife School District" -Title "Primary School Teacher" -City "Edgewood" -State "WA" -Department "Teacher" -DisplayName "Letitia Right" -EmailAddress "l.right@fifeschooldistrict.com" -Country "US"
-
