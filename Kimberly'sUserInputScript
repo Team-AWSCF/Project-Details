@@ -1,0 +1,22 @@
+# Script Name:            Ops 301 Project 
+# Author:                 Kimberly Dills
+# Date of last revision:  9/24/2020
+# Description of purpose: Powershell Active Directory Automation with User Input
+
+${New-ADUser} = Read-Host "Please enter your first and last name"
+
+${SamAccountName} = Read-Host "Please enter your first initial and last name with no spaces"
+
+${GivenName} = Read-Host "Please enter your first name"
+
+${Surname} = Read-Host "Please enter your last name"
+
+${Title} = Read-Host "Please enter your job title"
+
+${City} = Read-Host "Please enter the city in which you work"
+
+${Department} = Read-Host "Please enter the department in which you work"
+
+${DisplayName} = Read-Host "Please enter your first and last name"
+
+New-ADUser -Company "Fife School District" -State "WA" -Country "US"
