@@ -3,20 +3,22 @@
 # Date of last revision:  9/24/2020
 # Description of purpose: Powershell Active Directory Automation with User Input
 
-${New-ADUser} = Read-Host "Please enter your first and last name"
+ $Attributes =@{
 
-${SamAccountName} = Read-Host "Please enter your first initial and last name with no spaces"
+ Name= Read-Host "Please enter your full name"
 
-${GivenName} = Read-Host "Please enter your first name"
+ SamAccountName = Read-Host "Please enter your first initial and last name with no spaces"
 
-${Surname} = Read-Host "Please enter your last name"
+ GivenName = Read-Host "Please enter your first name"
 
-${Title} = Read-Host "Please enter your job title"
+ Surname = Read-Host "Please enter your last name"
 
-${City} = Read-Host "Please enter the city in which you work"
+ Title = Read-Host "Please enter your job title"
 
-${Department} = Read-Host "Please enter the department in which you work"
+ City = Read-Host "Please enter the city in which you work"
 
-${DisplayName} = Read-Host "Please enter your first and last name"
+ DisplayName = Read-Host "Please enter your first and last name"
+ 
+} 
 
-New-ADUser -Company "Fife School District" -State "WA" -Country "US"
+New-ADUser @Attributes -Company "Fife School District" -State "WA" -Country "US" -Department "Sub" -Title "Teacher" -Path "DC=corp,DC=globexnuclear,DC=com"
