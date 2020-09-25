@@ -1,10 +1,10 @@
-provider "aws" {
-  access_key = "AKIASQJBKFJC5S2KRX4L"
-  secret_key = "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"
+provider "aws" { # Directs terraform to provider being used and security credentials needed to create an valid instance with the provider
+  access_key = "***"
+  secret_key = "***"
   region     = "us-east-1"
 }
 
-resource "aws_instance" "Windows" {
+resource "aws_instance" "Windows" { # creates the perameters for the instance i want to create within aws
   ami           = "ami-0eb7fbcc77e5e6ec6"
   instance_type = "t2.micro"
   key_name = "fifeterraform-key"
@@ -12,7 +12,7 @@ resource "aws_instance" "Windows" {
 
 }
 
-resource "aws_security_group" "allow_rdp" {
+resource "aws_security_group" "allow_rdp" { # security rules allowing access to the RDP
   name        = "allow_rdp"
   description = "Allow rdp traffic"
 
