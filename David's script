@@ -1,10 +1,5 @@
 #This script is for adding existing users to either existing groups or creating a group 
 #to add the user to.
-$fullname = Read-Host "Please enter full name: "
-$firname = Read-Host "Please enter first name: "
-$laname = Read-Host "Please enter last name: "
-$samnam = Read-Host "Please enter SAM: "
-New-ADUser -SamAccountName $samnam -Name $fullname -GivenName $firname -Surname $laname -Company "Fife School District" -Title "Primary School Teacher" -City "Edgewood" -State "WA" -Department "Teacher" -DisplayName $laname -Country "US" -Path "DC=corp,DC=ops301,DC=com"
 
 #Main
 $userinp = Read-Host "Would you like to create a new group? "
