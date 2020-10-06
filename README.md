@@ -2,8 +2,8 @@
 
 Team members
 
-Kimberly Dills
-David Armstrong
+Kimberly Dills, 
+David Armstrong, 
 Dom Moore
 
 ## Documentation:
